@@ -1,0 +1,36 @@
+{
+    "java.project.referencedLibraries": [
+        "c:\\Users\\USER\\OneDrive\\Desktop\\Hibernate\\lib\\antlr4-runtime-4.13.0.jar",
+        "c:\\Users\\USER\\OneDrive\\Desktop\\Hibernate\\lib\\jakarta.transaction-api-2.0.1.jar",
+        "c:\\Users\\USER\\OneDrive\\Desktop\\Hibernate\\lib\\lombok.jar",
+        "c:\\Users\\USER\\OneDrive\\Desktop\\Hibernate\\lib\\hibernate-models-1.3.1.jar",
+        "c:\\Users\\USER\\OneDrive\\Desktop\\Hibernate\\lib\\txw2-4.0.0.jar",
+        "c:\\Users\\USER\\OneDrive\\Desktop\\Hibernate\\lib\\hibernate-core-7.4.7.Final.jar",
+        "c:\\Users\\USER\\OneDrive\\Desktop\\Hibernate\\lib\\jakarta.activation-api-2.1.3.jar",
+        "c:\\Users\\USER\\OneDrive\\Desktop\\Hibernate\\lib\\jaxb-core-4.0.0.jar",
+        "c:\\Users\\USER\\OneDrive\\Desktop\\Hibernate\\lib\\jboss-logging-3.6.3.Final.jar",
+        "c:\\Users\\USER\\OneDrive\\Desktop\\Hibernate\\lib\\jakarta.persistence-api-4.0.0-M6.jar",
+        "c:\\Users\\USER\\OneDrive\\Desktop\\Hibernate\\lib\\jakarta.xml.bind-api-4.0.0.jar",
+        "c:\\Users\\USER\\OneDrive\\Desktop\\Hibernate\\lib\\byte-buddy-1.15.11.jar",
+        "c:\\Users\\USER\\OneDrive\\Desktop\\Hibernate\\lib\\mysql-connector-j-9.7.0.jar",
+        "c:\\Users\\USER\\OneDrive\\Desktop\\Hibernate\\lib\\jaxb-impl-4.0.0.jar",
+        "lib/antlr4-runtime-4.13.0.jar",
+        "lib/byte-buddy-1.15.11.jar",
+        "lib/hibernate-core-7.4.7.Final.jar",
+        "lib/hibernate-models-1.3.1.jar",
+        "lib/jakarta.activation-api-2.1.3.jar",
+        "lib/jakarta.persistence-api-4.0.0-M6.jar",
+        "lib/jakarta.transaction-api-2.0.1.jar",
+        "lib/jakarta.xml.bind-api-4.0.0.jar",
+        "lib/jaxb-core-4.0.0.jar",
+        "lib/jaxb-impl-4.0.0.jar",
+        "lib/jboss-logging-3.6.3.Final.jar",
+        "lib/lombok.jar",
+        "lib/mysql-connector-j-9.7.0.jar",
+        "lib/txw2-4.0.0.jar"
+    ],
+    "java.jdt.ls.vmargs": "-XX:+UseG1GC -XX:+UseStringDeduplication -Xmx12G",
+    "java.project.sourcePaths": [
+        "src"
+    ]
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- 1. Database Connection Settings -->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+       <property name="connection.url">jdbc:mysql://localhost:3306/startersql?useSSL=false&amp;allowPublicKeyRetrieval=true</property>
+        <property name="connection.username">root</property> 
+        <property name="connection.password">Ankit@123</property>
+
+        <!-- Dialect setting -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- if we want see that which query is created by hibernate and fire just write show_sql and true -->
+        <property name="show_sql">true</property>
+
+        <!-- 2. Schema Validation  // due to (update) table will create only when table is not created 
+        and if you want to create and delete table again again just change(update) to create -->
+        <property name="hbm2ddl.auto">update</property>
+
+        <!-- 3. Mapping Class -->
+        <!-- 
+        <mapping class="Customer"/>
+        <mapping class="EmployeeApp"/>
+        <mapping class="Test"/>
+        <mapping class="Home"> -->
+        <mapping class="Employee"/>
+        <mapping class="Customer"/>
+        <mapping class="Transactions"/>
+        <mapping class="Logger"/>
+        <mapping class="Logger"/>
+
+
+        
+        
+    </session-factory>
+</hibernate-configuration>
