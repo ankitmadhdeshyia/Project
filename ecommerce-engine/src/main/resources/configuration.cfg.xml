@@ -20,7 +20,9 @@
  <!-- Drop and re-create the database schema on startup -->
  <property name="hbm2ddl.auto">update</property>
 
-<!-- <mapped class="Category"/> -->
- 
+<mapping  class="com.ecommerce.entity.User"/>
+<mapping  class="com.ecommerce.entity.Category"/>
+<mapping  class="com.ecommerce.entity.Product"/>
+<mapping  class="com.ecommerce.entity.OrderItem"/> 
  </session-factory>
 </hibernate-configuration>
