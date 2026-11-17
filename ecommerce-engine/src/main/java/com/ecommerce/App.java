@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.ecommerce.dao.CategoryDao;
+import com.ecommerce.dao.*;
 import com.ecommerce.entity.Category;
 import com.ecommerce.entity.OrderItem;
 import com.ecommerce.entity.Product;
@@ -35,20 +35,22 @@ public class App {
         p1.setName("Mobile");
         p1.setBrand("Samsung");
         p1.setDescription("Samsung Mobile Is the best Phone ");
-        p1.setDiscountPercentage("10%");
+        p1.setDiscountPercentage(10.0);
         p1.setSku("asdf123");
         p1.setPrice(12000);
         p1.setStock(10);
+        p1.setCategory(ca);
 
         
         Product p2=new Product();
         p2.setName("Mobile");
         p2.setBrand("Apple");
         p2.setDescription("Apple Mobile Is the best Phone ");
-        p2.setDiscountPercentage("15%");
+        p2.setDiscountPercentage(15.0);
         p2.setSku("asdf1234");
         p2.setPrice(120000);
         p2.setStock(100);
+        p2.setCategory(ca);
 
        List<Product> list=new ArrayList<>();
        list.add(p1);
@@ -56,6 +58,26 @@ public class App {
        ca.setProducts(list);
   
        OrderItem oi=new OrderItem();
+       //user Purchase the samsung phone
+       oi.setProduct(p1);
+       oi.setCustomerName(user);
+       oi.setQuantity(2);
+       oi.setPriceAtPurchase(p1.getPrice());
+       oi.setOrderStatus("PENDING");
+       oi.setOrderAt(LocalDateTime.now());
+
+
+       CategoryDao cd=new CategoryDao();
+       UserDao ud=new UserDao();
+
+       OrderItemDao od=new OrderItemDao();
+       
+      cd.saveCategory(ca);
+      ud.saveUser(user);
+      od.saveOrderItem(oi);
+      
+      
+
 
         
       

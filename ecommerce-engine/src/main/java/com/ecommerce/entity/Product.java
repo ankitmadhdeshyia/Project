@@ -18,10 +18,10 @@ public class Product {
     private int productId;
     private String name;
     @OneToMany(mappedBy = "product",cascade = CascadeType.ALL) 
-    private List<OrderItem> productName;
+    private List<OrderItem> orderItems;
     private String brand;
     private String description;
-    private String discountPercentage;
+    private double discountPercentage;
     //Stock keeping Unit (A unique Code)
     private String sku;
     private double price;
@@ -33,10 +33,10 @@ public class Product {
     public Product() {
     }
 
-    public Product(String name, List<OrderItem> productName, String brand, String description,
-            String discountPercentage, String sku, double price, int stock, Category category) {
+    public Product(String name, List<OrderItem> orderItems, String brand, String description,
+            double discountPercentage, String sku, double price, int stock, Category category) {
         this.name = name;
-        this.productName = productName;
+        this.orderItems = orderItems;
         this.brand = brand;
         this.description = description;
         this.discountPercentage = discountPercentage;
@@ -54,12 +54,12 @@ public class Product {
         this.name = name;
     }
 
-    public List<OrderItem> getProductName() {
-        return productName;
+    public List<OrderItem> getorderItems() {
+        return orderItems;
     }
 
-    public void setProductName(List<OrderItem> productName) {
-        this.productName = productName;
+    public void setorderItems(List<OrderItem> orderItems) {
+        this.orderItems = orderItems;
     }
 
     public String getBrand() {
@@ -78,11 +78,11 @@ public class Product {
         this.description = description;
     }
 
-    public String getDiscountPercentage() {
+    public double getDiscountPercentage() {
         return discountPercentage;
     }
 
-    public void setDiscountPercentage(String discountPercentage) {
+    public void setDiscountPercentage(double discountPercentage) {
         this.discountPercentage = discountPercentage;
     }
 
